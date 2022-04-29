@@ -16,7 +16,8 @@ namespace YairPeryMemoryGameNBA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MemoryGameForm());
+            Application.Run(new PictureBoxMemoryGameForm());
+            // Application.Run(new MemoryGameForm());
         }
     }
 }
