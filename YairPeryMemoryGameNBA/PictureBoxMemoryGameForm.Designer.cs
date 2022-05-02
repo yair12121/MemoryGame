@@ -76,6 +76,9 @@ namespace YairPeryMemoryGameNBA
             this.scoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblGameTimer = new System.Windows.Forms.Label();
+            this.tmrNotMatchTimer = new System.Windows.Forms.Timer(this.components);
+            this.lblMatchPairs = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -628,6 +631,7 @@ namespace YairPeryMemoryGameNBA
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // lblGameTimer
             // 
@@ -638,11 +642,36 @@ namespace YairPeryMemoryGameNBA
             this.lblGameTimer.TabIndex = 4;
             this.lblGameTimer.Text = "label1";
             // 
+            // tmrNotMatchTimer
+            // 
+            this.tmrNotMatchTimer.Interval = 700;
+            this.tmrNotMatchTimer.Tick += new System.EventHandler(this.tmrNotMatchTimer_Tick);
+            // 
+            // lblMatchPairs
+            // 
+            this.lblMatchPairs.AutoSize = true;
+            this.lblMatchPairs.Location = new System.Drawing.Point(830, 32);
+            this.lblMatchPairs.Name = "lblMatchPairs";
+            this.lblMatchPairs.Size = new System.Drawing.Size(13, 13);
+            this.lblMatchPairs.TabIndex = 5;
+            this.lblMatchPairs.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(755, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Matched Pairs:";
+            // 
             // PictureBoxMemoryGameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 574);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblMatchPairs);
             this.Controls.Add(this.lblGameTimer);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -742,5 +771,8 @@ namespace YairPeryMemoryGameNBA
         private System.Windows.Forms.ToolStripMenuItem scoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label lblGameTimer;
+        private System.Windows.Forms.Timer tmrNotMatchTimer;
+        private System.Windows.Forms.Label lblMatchPairs;
+        private System.Windows.Forms.Label label1;
     }
 }
