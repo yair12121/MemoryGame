@@ -186,6 +186,12 @@ namespace YairPeryMemoryGameNBA
             this.Close();
         }
 
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             TimeSpan ts = stopWatch.Elapsed;
