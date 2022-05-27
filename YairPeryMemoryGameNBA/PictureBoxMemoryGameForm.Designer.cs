@@ -79,6 +79,8 @@ namespace YairPeryMemoryGameNBA
             this.tmrNotMatchTimer = new System.Windows.Forms.Timer(this.components);
             this.lblMatchPairs = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -593,6 +595,8 @@ namespace YairPeryMemoryGameNBA
             // 
             this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newGameToolStripMenuItem1,
+            this.registerToolStripMenuItem,
+            this.loginToolStripMenuItem,
             this.scoresToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
@@ -664,6 +668,18 @@ namespace YairPeryMemoryGameNBA
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Matched Pairs:";
+            // 
+            // registerToolStripMenuItem
+            // 
+            this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registerToolStripMenuItem.Text = "Register";
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loginToolStripMenuItem.Text = "Login";
             // 
             // PictureBoxMemoryGameForm
             // 
@@ -774,5 +790,7 @@ namespace YairPeryMemoryGameNBA
         private System.Windows.Forms.Timer tmrNotMatchTimer;
         private System.Windows.Forms.Label lblMatchPairs;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
     }
 }
